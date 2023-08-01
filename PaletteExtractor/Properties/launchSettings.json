@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PaletteExtractor": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Nick\\Desktop\\pokehouse.bmp"
+    }
+  }
+}
