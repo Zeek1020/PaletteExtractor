@@ -35,8 +35,7 @@ class Program
         if (args.Length <= 0) throw new ArgumentException("Must supply image file");
         if (!File.Exists(args[0])) throw new ArgumentException($"File: {args[0]} could not be found");
         FileInfo inputFile = new FileInfo(args[0]);
-        var filename = inputFile.Name;
-        var outputFile = $"{inputFile.Directory}/{filename}-palette.bmp";
+        var outputFile = $"{inputFile.Directory}/{inputFile.Name}-palette.bmp";
         if (args.Length == 2)
         {
             FileInfo testFileInfo = new FileInfo(args[1]);
